@@ -1,20 +1,30 @@
-import './Navbar.css'
+import "./Navbar.css";
+import { navItems } from "@/constants";
 const Navbar = () => {
   return (
     <nav className="navbar-main flex justify-between px-16 py-5 font-bold ">
-        <div>
+      <div>
         <h5 className="">Prateek Jha</h5>
-        </div>
-        <div>
+      </div>
+      <div>
         <ul className="flex gap-8">
-            <li className='cursor-pointer '>About Me</li>
-            <li className='cursor-pointer '>Work Experience</li>
-            <li className='cursor-pointer '>Projects</li>
-            <li className='cursor-pointer '>Contact</li>
+          {navItems.map((navItem) => (
+            <li
+              className="cursor-pointer "
+              key={navItem.id}
+              onClick={() => {
+                document
+                  .getElementById(navItem.to)
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              {navItem.name}
+            </li>
+          ))}
         </ul>
-        </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
