@@ -17,7 +17,8 @@ const Footer: FC = () => {
                   </div>
                 ) : (
                   <div className="contact-icon">
-                    <img
+                    <img src={contact.icon as string} alt="" />
+                    {/* <img
                       src={contact.icon as string}
                       style={{
                         height: "24px",
@@ -25,7 +26,7 @@ const Footer: FC = () => {
                         objectFit: "contain",
                       }}
                       alt=""
-                    />
+                    /> */}
                   </div>
                 )}
 

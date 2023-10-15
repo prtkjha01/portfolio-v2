@@ -1,6 +1,33 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+//Skill Logo Imports
+import react from "@assets/react.png";
+import next from "@assets/next.png";
+import redux from "@assets/redux.png";
+import vue from "@assets/vue.png";
+import nuxt from "@assets/nuxt.png";
+import pinia from "@assets/pinia.png";
+import node from "@assets/node.png";
+import express from "@assets/express.png";
+import springboot from "@assets/springboot.png";
+import mongoDb from "@assets/mongoDb.png";
+import cpp from "@assets/cpp.png";
+import rest from "@assets/rest.png";
+import js from "@assets/js.png";
+import ts from "@assets/ts.png";
+import jwt from "@assets/jwt.png";
+import flutter from "@assets/flutter.png";
+import leetcode from "@assets/leetcode.svg";
+//Company Logo Imports
+import prodo from "@assets/prodo.png";
+import sateeq from "@assets/sateeq.png";
+import lokal from "@assets/lokal.png";
+//Project Thumbnail Imports
+import myEcomLandingPage from "@assets/myEcomLandingPage.png";
+import fakeflixLandingPage from "@assets/fakeflixLandingPage.png";
+import newsFirstLandingPage from "@assets/newsFirstLandingPage.png";
 //INTERFACES
 interface NavItem {
   id: number;
@@ -73,197 +100,197 @@ export const aboutText_line1: string =
 export const aboutText_line2: string =
   "If you're seeking a developer who can bring your ideas to life with style and efficiency, let's chat. Together, we can embark on a coding adventure! 🚀👨‍💻";
 
+export const skills: Array<SkillInterface> = [
+  {
+    id: 1,
+    name: "React JS",
+    type: "FRAMEWORK",
+    logo: react,
+  },
+  {
+    id: 2,
+    name: "Next JS",
+    type: "FRAMEWORK",
+    logo: next,
+  },
+  {
+    id: 3,
+    name: "Redux",
+    type: "LIBRARY",
+    logo: redux,
+  },
+  {
+    id: 4,
+    name: "Vue JS",
+    type: "FRAMEWORK",
+    logo: vue,
+  },
+  {
+    id: 5,
+    name: "Nuxt JS",
+    type: "FRAMEWORK",
+    logo: nuxt,
+  },
+  {
+    id: 6,
+    name: "Pinia",
+    type: "LIBRARY",
+    logo: pinia,
+  },
+  {
+    id: 7,
+    name: "Node JS",
+    type: "LANGUAGE",
+    logo: node,
+  },
+  {
+    id: 8,
+    name: "Express Js",
+    type: "FRAMEWORK",
+    logo: express,
+  },
+  {
+    id: 9,
+    name: "Springboot",
+    type: "FRAMEWORK",
+    logo: springboot,
+  },
+  {
+    id: 10,
+    name: "MongoDB",
+    type: "DATABASE",
+    logo: mongoDb,
+  },
+  {
+    id: 11,
+    name: "C++",
+    type: "LANGUAGE",
+    logo: cpp,
+  },
+  {
+    id: 12,
+    name: "REST APIs",
+    type: "CONCEPT",
+    logo: rest,
+  },
+  {
+    id: 13,
+    name: "Javascript",
+    type: "LANGUAGE",
+    logo: js,
+  },
+  {
+    id: 14,
+    name: "Typescript",
+    type: "LANGUAGE",
+    logo: ts,
+  },
+  {
+    id: 15,
+    name: "JWT Auth",
+    type: "CONCEPT",
+    logo: jwt,
+  },
+  {
+    id: 16,
+    name: "Flutter",
+    type: "FRAMEWORK",
+    logo: flutter,
+  },
+];
 export const experience: Array<ExperienceInterface> = [
   {
     id: 1,
     companyName: "Prodo Technologies",
     designation: "Software Development Engineer",
     from: "April 2023",
-    logo: "prodo.png",
+    logo: prodo,
   },
   {
     id: 2,
     companyName: "Sateeq",
     designation: "Software Development Engineer Intern",
     from: "March 2023",
-    logo: "sateeq.png",
+    logo: sateeq,
   },
   {
     id: 3,
     companyName: "Prodo Technologies",
     designation: "Software Development Engineer Intern",
     from: "December 2022",
-    logo: "prodo.png",
+    logo: prodo,
   },
   {
     id: 4,
     companyName: "Lokal Entrepreneurs Empowerment Pvt. Ltd.",
     designation: "Software Development Engineer Intern",
     from: "October 2022",
-    logo: "lokal.png",
-  },
-];
-export const skills: Array<SkillInterface> = [
-  {
-    id: 1,
-    name: "React JS",
-    type: "FRAMEWORK",
-    logo: "react.png",
-  },
-  {
-    id: 2,
-    name: "Next JS",
-    type: "FRAMEWORK",
-    logo: "next.png",
-  },
-  {
-    id: 3,
-    name: "Redux",
-    type: "LIBRARY",
-    logo: "redux.png",
-  },
-  {
-    id: 4,
-    name: "Vue JS",
-    type: "FRAMEWORK",
-    logo: "vue.png",
-  },
-  {
-    id: 5,
-    name: "Nuxt JS",
-    type: "FRAMEWORK",
-    logo: "nuxt.png",
-  },
-  {
-    id: 6,
-    name: "Pinia",
-    type: "LIBRARY",
-    logo: "pinia.png",
-  },
-  {
-    id: 7,
-    name: "Node JS",
-    type: "LANGUAGE",
-    logo: "node.png",
-  },
-  {
-    id: 8,
-    name: "Express Js",
-    type: "FRAMEWORK",
-    logo: "express.png",
-  },
-  {
-    id: 9,
-    name: "Springboot",
-    type: "FRAMEWORK",
-    logo: "springboot.png",
-  },
-  {
-    id: 10,
-    name: "MongoDB",
-    type: "DATABASE",
-    logo: "mongoDb.png",
-  },
-  {
-    id: 11,
-    name: "C++",
-    type: "LANGUAGE",
-    logo: "cpp.png",
-  },
-  {
-    id: 12,
-    name: "REST APIs",
-    type: "CONCEPT",
-    logo: "rest.png",
-  },
-  {
-    id: 13,
-    name: "Javascript",
-    type: "LANGUAGE",
-    logo: "js.png",
-  },
-  {
-    id: 14,
-    name: "Typescript",
-    type: "LANGUAGE",
-    logo: "ts.png",
-  },
-  {
-    id: 15,
-    name: "JWT Auth",
-    type: "CONCEPT",
-    logo: "jwt.png",
-  },
-  {
-    id: 16,
-    name: "Flutter",
-    type: "FRAMEWORK",
-    logo: "flutter.png",
+    logo: lokal,
   },
 ];
 export const projects: Array<ProjectInterface> = [
   {
     id: 1,
     projectName: "My E-com",
-    thumbnail: "myEcomLandingPage.png",
+    thumbnail: myEcomLandingPage,
     githubLink: "https://github.com/prtkjha01/my-ecom",
     hostedLink: "",
     techUsed: [
       {
         id: 1,
         name: "Next JS",
-        logo: "next.png",
+        logo: next,
       },
       {
         id: 2,
         name: "Redux",
-        logo: "redux.png",
+        logo: redux,
       },
       {
         id: 3,
         name: "Express JS",
-        logo: "express.png",
+        logo: express,
       },
       {
         id: 4,
         name: "Mongo DB",
-        logo: "mongoDb.png",
+        logo: mongoDb,
       },
       {
         id: 5,
         name: "Typescript",
-        logo: "ts.png",
+        logo: ts,
       },
     ],
   },
   {
     id: 2,
     projectName: "FakeFlix",
-    thumbnail: "fakeflixLandingPage.png",
+    thumbnail: fakeflixLandingPage,
     githubLink: "https://github.com/prtkjha01/movie-app",
     hostedLink: "https://fake-flix.netlify.app/",
     techUsed: [
       {
         id: 1,
         name: "Vue JS",
-        logo: "vue.png",
+        logo: vue,
       },
       {
         id: 2,
         name: "Pinia",
-        logo: "pinia.png",
+        logo: pinia,
       },
       {
         id: 3,
         name: "REST Apis",
-        logo: "rest.png",
+        logo: rest,
       },
     ],
   },
   {
     id: 3,
     projectName: "NewsFirst",
-    thumbnail: "newsFirstLandingPage.png",
+    thumbnail: newsFirstLandingPage,
     githubLink: "https://github.com/prtkjha01/newsapp",
     hostedLink:
       "https://www.youtube.com/watch?v=VLtuqkbu1RU&ab_channel=PrateekJha",
@@ -271,12 +298,12 @@ export const projects: Array<ProjectInterface> = [
       {
         id: 1,
         name: "React JS",
-        logo: "react.png",
+        logo: react,
       },
       {
         id: 2,
         name: "REST Apis",
-        logo: "rest.png",
+        logo: rest,
       },
     ],
   },
@@ -308,6 +335,7 @@ export const contacts: Array<ContactInterface> = [
     contactName: "Leetcode",
     url: "https://leetcode.com/Prateek01/",
     customIcon: true,
-    icon: "https://thanhtaile.me/wp-content/uploads/2022/11/Leetcode-icon-white-with-transparent-background.png",
+    //icon: "https://thanhtaile.me/wp-content/uploads/2022/11/Leetcode-icon-white-with-transparent-background.png",
+    icon: leetcode,
   },
 ];

@@ -15,7 +15,7 @@ const Skills: FC = () => {
                 className=" flex flex-col justify-center items-center gap-1 p-2"
               >
                 <img
-                  src={`/src/assets/${skill.logo}`}
+                  src={skill.logo}
                   className=" lg:h-24 lg:w-24 md:h-16 md:w-16 sm:h-14 sm:w-14  h-12 w-12 object-contain"
                   alt={skill.name}
                 />

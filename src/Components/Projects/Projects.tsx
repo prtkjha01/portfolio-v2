@@ -14,7 +14,7 @@ const Projects: FC = () => {
                   <div className="flip-card-inner">
                     <div className="flip-card-front bg-blue-950 rounded-lg">
                       <img
-                        src={`src/assets/${project.thumbnail}`}
+                        src={project.thumbnail}
                         className=" w-full rounded-t-lg"
                         alt="Avatar"
                       />
@@ -32,7 +32,7 @@ const Projects: FC = () => {
                               className="text-[12px] flex items-center gap-2 mb-1"
                             >
                               <img
-                                src={`/src/assets/${tech.logo}`}
+                                src={tech.logo}
                                 className=" h-5 w-5"
                                 alt="tech-stack"
                               />

@@ -25,7 +25,7 @@ const WorkExp: FC = () => {
                   </div>
                   <div className="order-1 bg-purple-950 rounded-lg shadow-xl w-5/12 px-6 py-4 full-width flex gap-4">
                     <img
-                      src={`/src/assets/${item.logo}`}
+                      src={item.logo}
                       className="h-16 w-16 bg-white rounded-full p-1 object-contain"
                       alt={item.companyName}
                     />
@@ -51,7 +51,7 @@ const WorkExp: FC = () => {
                   </div>
                   <div className="order-1 bg-blue-950 rounded-lg shadow-xl w-5/12 px-6 py-4 full-width flex gap-4">
                     <img
-                      src={`/src/assets/${item.logo}`}
+                      src={item.logo}
                       className="h-16 w-16 bg-white rounded-full p-1 object-contain"
                       alt={item.companyName}
                     />
