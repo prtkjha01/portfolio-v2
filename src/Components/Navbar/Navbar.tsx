@@ -6,9 +6,6 @@ const Navbar = () => {
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
   };
-  const closeMenu = () => {
-    setShowMenu(false);
-  };
   return (
     <nav className="navbar-main flex justify-between lg:px-16 sm:px-8 py-5 font-bold ">
       <div>
