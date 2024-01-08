@@ -1,6 +1,10 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 //Skill Logo Imports
 import react from "@assets/react.png";
@@ -28,6 +32,7 @@ import lokal from "@assets/lokal.png";
 import myEcomLandingPage from "@assets/myEcomLandingPage.png";
 import fakeflixLandingPage from "@assets/fakeflixLandingPage.png";
 import newsFirstLandingPage from "@assets/newsFirstLandingPage.png";
+import livFitLandingPage from "@assets/livFitLandingPage.png";
 //INTERFACES
 interface NavItem {
   id: number;
@@ -53,6 +58,7 @@ interface ProjectInterface {
   thumbnail: string;
   githubLink: string;
   hostedLink: string;
+  color: string;
   techUsed: Array<TechInterface>;
 }
 interface TechInterface {
@@ -235,6 +241,7 @@ export const projects: Array<ProjectInterface> = [
     thumbnail: myEcomLandingPage,
     githubLink: "https://github.com/prtkjha01/my-ecom",
     hostedLink: "",
+    color: "#eee",
     techUsed: [
       {
         id: 1,
@@ -248,7 +255,7 @@ export const projects: Array<ProjectInterface> = [
       },
       {
         id: 3,
-        name: "Express JS",
+        name: "Express",
         logo: express,
       },
       {
@@ -269,6 +276,7 @@ export const projects: Array<ProjectInterface> = [
     thumbnail: fakeflixLandingPage,
     githubLink: "https://github.com/prtkjha01/movie-app",
     hostedLink: "https://fake-flix.netlify.app/",
+    color: "#eee",
     techUsed: [
       {
         id: 1,
@@ -294,6 +302,7 @@ export const projects: Array<ProjectInterface> = [
     githubLink: "https://github.com/prtkjha01/newsapp",
     hostedLink:
       "https://www.youtube.com/watch?v=VLtuqkbu1RU&ab_channel=PrateekJha",
+    color: "#002468",
     techUsed: [
       {
         id: 1,
@@ -302,6 +311,46 @@ export const projects: Array<ProjectInterface> = [
       },
       {
         id: 2,
+        name: "REST Apis",
+        logo: rest,
+      },
+    ],
+  },
+  {
+    id: 4,
+    projectName: "LivFit",
+    thumbnail: livFitLandingPage,
+    githubLink: "https://github.com/prtkjha01/liv-fit-client",
+    hostedLink: "https://liv-ift.netlify.app",
+    color: "#eee",
+    techUsed: [
+      {
+        id: 1,
+        name: "Vue JS",
+        logo: vue,
+      },
+      {
+        id: 2,
+        name: "Pinia",
+        logo: pinia,
+      },
+      {
+        id: 3,
+        name: "Express",
+        logo: express,
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        logo: mongoDb,
+      },
+      {
+        id: 5,
+        name: "Typescript",
+        logo: ts,
+      },
+      {
+        id: 6,
         name: "REST Apis",
         logo: rest,
       },
@@ -325,13 +374,20 @@ export const contacts: Array<ContactInterface> = [
   },
   {
     id: 3,
+    contactName: "Twitter",
+    url: "https://twitter.com/Prateek_Jha01",
+    customIcon: false,
+    icon: faTwitter,
+  },
+  {
+    id: 4,
     contactName: "Email",
     url: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=prtkjha01@gmail.com",
     customIcon: false,
     icon: faEnvelope,
   },
   {
-    id: 4,
+    id: 5,
     contactName: "Leetcode",
     url: "https://leetcode.com/Prateek01/",
     customIcon: true,

@@ -10,29 +10,24 @@ const Footer: FC = () => {
         {contacts.map((contact) => {
           return (
             <a key={contact.id} href={contact.url} target="_blank">
-              <div className="contact flex flex-col justify-center items-center hover:scale-110">
+              <div className="contact flex flex-col justify-center items-center hover:scale-150">
                 {!contact.customIcon ? (
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={contact.icon as IconProp} />
                   </div>
                 ) : (
                   <div className="contact-icon">
-                    <img src={contact.icon as string} alt="" />
-                    {/* <img
+                    <img
                       src={contact.icon as string}
                       style={{
-                        height: "24px",
-                        width: "20px",
-                        objectFit: "contain",
+                        height: "16px",
+                        width: "24px",
+                        marginBlockStart: "2px",
                       }}
-                      alt=""
-                    /> */}
+                      alt="contact"
+                    />
                   </div>
                 )}
-
-                <div className="contact-name lg:text-[16px] md:text-[14px] text-[13px]">
-                  {contact.contactName}
-                </div>
               </div>
             </a>
           );

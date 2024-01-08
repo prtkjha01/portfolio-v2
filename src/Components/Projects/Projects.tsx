@@ -6,7 +6,7 @@ const Projects: FC = () => {
     <section id="projects">
       <div className="mt-52 lg:px-16 sm:px-8">
         <div className="text-[32px] font-black mb-24">Projects</div>
-        <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12 h-full">
+        <div className=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12 h-full">
           {projects.map((project) => {
             return (
               <div key={project.id} className="flex justify-center">
@@ -15,10 +15,13 @@ const Projects: FC = () => {
                     <div className="flip-card-front bg-blue-950 rounded-lg">
                       <img
                         src={project.thumbnail}
-                        className=" w-full rounded-t-lg"
+                        className=" w-full h-full  blur-sm rounded-lg"
                         alt="Avatar"
                       />
-                      <div className="mt-4 font-semibold">
+                      <div
+                        className="mt-4 project-name font-semibold"
+                        style={{ color: project.color }}
+                      >
                         {project.projectName}
                       </div>
                     </div>
