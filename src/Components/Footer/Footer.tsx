@@ -10,7 +10,7 @@ const Footer: FC = () => {
         {contacts.map((contact) => {
           return (
             <a key={contact.id} href={contact.url} target="_blank">
-              <div className="contact flex flex-col justify-center items-center hover:scale-150">
+              <div className="contact flex flex-col justify-center items-center transition-all duration-300  hover:scale-150">
                 {!contact.customIcon ? (
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={contact.icon as IconProp} />

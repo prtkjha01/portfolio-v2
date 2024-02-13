@@ -240,8 +240,8 @@ export const projects: Array<ProjectInterface> = [
     projectName: "My E-com",
     thumbnail: myEcomLandingPage,
     githubLink: "https://github.com/prtkjha01/my-ecom",
-    hostedLink: "",
-    color: "#eee",
+    hostedLink: "https://my-ecom-one.vercel.app/",
+    color: "#002468",
     techUsed: [
       {
         id: 1,

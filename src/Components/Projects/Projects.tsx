@@ -6,7 +6,7 @@ const Projects: FC = () => {
     <section id="projects">
       <div className="mt-52 lg:px-16 sm:px-8">
         <div className="text-[32px] font-black mb-24">Projects</div>
-        <div className=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12 h-full">
+        <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12 h-full">
           {projects.map((project) => {
             return (
               <div key={project.id} className="flex justify-center">
