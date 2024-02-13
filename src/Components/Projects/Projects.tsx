@@ -18,10 +18,7 @@ const Projects: FC = () => {
                         className=" w-full h-full  blur-sm rounded-lg"
                         alt="Avatar"
                       />
-                      <div
-                        className="mt-4 project-name font-semibold"
-                        style={{ color: project.color }}
-                      >
+                      <div className="mt-4 project-name font-semibold bg-[#737373cf] px-2 rounded">
                         {project.projectName}
                       </div>
                     </div>
@@ -52,14 +49,14 @@ const Projects: FC = () => {
                           <a
                             href={project.githubLink}
                             target="_blank"
-                            className="btn btn-primary cursor-pointer"
+                            className="btn btn-primary font-bold border border-white px-2 rounded cursor-pointer"
                           >
                             Github
                           </a>
                           <a
                             href={project.hostedLink}
                             target="_blank"
-                            className="btn btn-secondary cursor-pointer"
+                            className="btn btn-secondary font-bold border border-white px-2 rounded cursor-pointer"
                           >
                             Live Demo
                           </a>
