@@ -207,27 +207,34 @@ export const skills: Array<SkillInterface> = [
 export const experience: Array<ExperienceInterface> = [
   {
     id: 1,
+    companyName: "Alt Mobility",
+    designation: "Software Development Engineer I",
+    from: "Feburary 2024",
+    logo: "https://alt-mobility.com/static/media/altlogo.b557cc0ba46db1fae8ca.png",
+  },
+  {
+    id: 2,
     companyName: "Prodo Technologies",
     designation: "Software Development Engineer",
     from: "April 2023",
     logo: prodo,
   },
   {
-    id: 2,
+    id: 3,
     companyName: "Sateeq",
     designation: "Software Development Engineer Intern",
     from: "March 2023",
     logo: sateeq,
   },
   {
-    id: 3,
+    id: 4,
     companyName: "Prodo Technologies",
     designation: "Software Development Engineer Intern",
     from: "December 2022",
     logo: prodo,
   },
   {
-    id: 4,
+    id: 5,
     companyName: "Lokal Entrepreneurs Empowerment Pvt. Ltd.",
     designation: "Software Development Engineer Intern",
     from: "October 2022",
