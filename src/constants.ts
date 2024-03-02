@@ -398,7 +398,6 @@ export const contacts: Array<ContactInterface> = [
     contactName: "Leetcode",
     url: "https://leetcode.com/Prateek01/",
     customIcon: true,
-    //icon: "https://thanhtaile.me/wp-content/uploads/2022/11/Leetcode-icon-white-with-transparent-background.png",
     icon: leetcode,
   },
 ];

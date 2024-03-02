@@ -16,7 +16,7 @@ const Skills: FC = () => {
               >
                 <img
                   src={skill.logo}
-                  className=" lg:h-24 lg:w-24 md:h-16 md:w-16 sm:h-14 sm:w-14  h-12 w-12 object-contain"
+                  className=" lg:h-24 lg:w-24 md:h-16 md:w-16 sm:h-14 sm:w-14  h-12 w-12 object-contain rounded-lg"
                   alt={skill.name}
                 />
                 <div className="text-center lg:text-[16px] md:text-[14px] text-[12px]">

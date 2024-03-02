@@ -1,5 +1,8 @@
 import { FC } from "react";
 import { projects } from "@/constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import "./Projects.css";
 const Projects: FC = () => {
   return (
@@ -49,16 +52,18 @@ const Projects: FC = () => {
                           <a
                             href={project.githubLink}
                             target="_blank"
-                            className="btn btn-primary font-bold border border-white px-2 rounded cursor-pointer"
+                            className="btn btn-primary font-bold border flex items-center gap-2 border-white px-2 rounded cursor-pointer"
                           >
-                            Github
+                            <FontAwesomeIcon icon={faGithub} />
+                            <p>Github</p>
                           </a>
                           <a
                             href={project.hostedLink}
                             target="_blank"
-                            className="btn btn-secondary font-bold border border-white px-2 rounded cursor-pointer"
+                            className="btn btn-secondary font-bold border flex items-center gap-2 border-white px-2 rounded cursor-pointer"
                           >
-                            Live Demo
+                            <FontAwesomeIcon icon={faGlobe} />
+                            <p>Live Demo</p>
                           </a>
                         </div>
                       </div>
